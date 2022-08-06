@@ -1,6 +1,6 @@
 {
   "name": "@jtsang/wujie-react",
-  "version": "1.0.0-rc.7",
+  "version": "1.0.0-rc.8",
   "description": "无界微前端React组件封装",
   "main": "./lib/index.js",
   "module": "./esm/index.js",
@@ -15,6 +15,10 @@
     "prepack": "bash build.sh",
     "start": "cross-env BABEL_ENV=esm babel index.js --out-dir ./esm --source-maps inline --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtsang4/wujie.git"
   },
   "publishConfig": {
     "access": "public"
