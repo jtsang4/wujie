@@ -1,5 +1,5 @@
 {
-  "name": "wujie",
+  "name": "@jtsang/wujie",
   "version": "1.0.0-rc.6",
   "description": "极致的微前端框架",
   "main": "./lib/index.js",

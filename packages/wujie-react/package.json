@@ -1,5 +1,5 @@
 {
-  "name": "wujie-react",
+  "name": "@jtsang/wujie-react",
   "version": "1.0.0-rc.6",
   "description": "无界微前端React组件封装",
   "main": "./lib/index.js",
