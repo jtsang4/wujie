@@ -427,16 +427,17 @@ export default class Wujie {
     plugins: Array<plugin> | plugin;
     lifecycles: lifecycles;
   }) {
+    const { name, url, attrs, fiber, degrade, lifecycles, plugins } = options;
     // 传递inject给嵌套子应用
     if (window.__POWERED_BY_WUJIE__) this.inject = window.__WUJIE.inject;
     else {
       this.inject = {
         idToSandboxMap,
         appEventObjMap,
-        mainHostPath: window.location.protocol + "//" + window.location.host,
+        // mainHostPath: window.location.protocol + "//" + window.location.host,
+        mainHostPath: url,
       };
     }
-    const { name, url, attrs, fiber, degrade, lifecycles, plugins } = options;
     this.id = name;
     this.fiber = fiber;
     this.degrade = degrade || !wujieSupport;
