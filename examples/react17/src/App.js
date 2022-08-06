@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from "react
 import Dialog from "./Dialog";
 import Location from "./Location";
 import Communication from "./Communication";
-import State from './State'
+import State from "./State";
 import Tag from "antd/es/tag";
 import Button from "antd/es/button";
 import "antd/es/tag/style/css";
@@ -30,7 +30,7 @@ const Home = () => (
       </Tag>
     </p>
     <p>
-    <Button onClick={() => window.open("https://github.com/Tencent/wujie/tree/master/examples/react17")}>
+      <Button onClick={() => window.open("https://github.com/Tencent/wujie/tree/master/examples/react17")}>
         仓库地址
       </Button>
     </p>
@@ -46,7 +46,6 @@ function App() {
               <NavLink to="/home">首页</NavLink> | <NavLink to="/dialog">弹窗</NavLink> |{" "}
               <NavLink to="/location">路由</NavLink> | <NavLink to="/communication">通信</NavLink> |{" "}
               <NavLink to="/state">状态</NavLink>
-
             </nav>
             <img src={logo} className="App-logo" alt="logo" />
 

@@ -2,6 +2,7 @@
   "name": "wujie-project",
   "version": "0.0.0",
   "description": "极致的微前端框架",
+  "packageManager": "pnpm@7.0.0+",
   "private": true,
   "scripts": {
     "start": "lerna run start --parallel",
@@ -17,11 +18,17 @@
   },
   "author": "yiludege",
   "license": "MIT",
+  "workspaces": [
+    "examples/*",
+    "packages/*"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "husky": "^7.0.4",
-    "lint-staged": "^12.4.1"
-  },
-  "dependencies": {}
+    "lerna": "^5.3.0",
+    "lint-staged": "^12.4.1",
+    "nx": "^14.5.4",
+    "pnpm": "^7.8.0"
+  }
 }
