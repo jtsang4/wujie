@@ -21,6 +21,9 @@ export default class WujieReact extends React.PureComponent {
     afterMount: typeof PropTypes.func;
     beforeUnmount: typeof PropTypes.func;
     afterUnmount: typeof PropTypes.func;
+    activated: typeof PropTypes.func;
+    deactivated: typeof PropTypes.func;
+    loadError: typeof PropTypes.func;
   };
   static bus: typeof bus;
   static preloadApp: typeof preloadApp;
